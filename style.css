@@ -27,7 +27,7 @@ main {
   grid-template-columns: 307px 307px 307px;
   width: 920px;
   height: 500px;
-  margin: -21px auto 0;
+  margin: 21px auto 0;
   & div:first-child {
     border-radius: 8px 0 0 8px;
     background-color: var(--Bright-orange);
