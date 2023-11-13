@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;300;400&display=swap");
+:root {
+  /* ### Primary */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+  --Transparent-white-paragraphs-: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca";
+}
+body {
+  background-color: var(--Very-light-gray-background-headings-buttons);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.content {
+  display: grid;
+  grid-template-columns: 307px 307px 307px;
+  width: 920px;
+  height: 500px;
+  margin: 0 auto;
+  & div:first-child {
+    border-radius: 8px 0 0 8px;
+    background-color: var(--Bright-orange);
+    & button {
+      color: var(--Bright-orange);
+    }
+  }
+  & div:nth-child(2) {
+    background-color: var(--Dark-cyan);
+    & button {
+      color: var(--Dark-cyan);
+    }
+  }
+  & div:nth-child(3) {
+    border-radius: 0 8px 8px 0;
+    background-color: var(--Very-dark-cyan);
+    & button {
+      color: var(--Very-dark-cyan);
+    }
+  }
+  .column {
+    padding: 48px 47.5px 0;
+    color: var(--Transparent-white-paragraphs-);
+    & img {
+      margin-bottom: 31px;
+    }
+    & h1 {
+      font-family: "Big Shoulders Display";
+      margin-bottom: 25px;
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--Very-light-gray-background-headings-buttons);
+    }
+    & p {
+      width: 212px;
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 83px;
+      line-height: 1.667;
+      letter-spacing: 0.23px;
+    }
+    & button {
+      width: 146px;
+      height: 48px;
+      font-size: 15px;
+      font-weight: 400;
+      border: none;
+      border-radius: 25px;
+      padding: 11.5px 31.5px;
+    }
+  }
+}
+@media (width < 920px) {
+  .content {
+    padding: 20px 0;
+    height: 1326px;
+    width: 327px;
+    grid-template-columns: 1fr;
+    & div:first-child {
+      border-radius: 8px 8px 0 0;
+    }
+    & div:nth-child(3) {
+      border-radius: 0 0 8px 8px;
+    }
+    .column {
+      & p {
+        margin: 25px 0;
+        width: 231px;
+      }
+      & button {
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
