@@ -23,12 +23,11 @@ main {
   align-items: center;
 }
 .content {
-  margin-top: -21px;
   display: grid;
   grid-template-columns: 307px 307px 307px;
   width: 920px;
   height: 500px;
-  margin: 0 auto;
+  margin: -21px auto 0;
   & div:first-child {
     border-radius: 8px 0 0 8px;
     background-color: var(--Bright-orange);
