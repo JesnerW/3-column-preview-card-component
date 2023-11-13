@@ -23,6 +23,7 @@ main {
   align-items: center;
 }
 .content {
+  margin-top: -21px;
   display: grid;
   grid-template-columns: 307px 307px 307px;
   width: 920px;
@@ -82,7 +83,7 @@ main {
 }
 @media (width < 920px) {
   .content {
-    padding: 20px 0;
+    padding: 41px 0;
     height: 1326px;
     width: 327px;
     grid-template-columns: 1fr;
